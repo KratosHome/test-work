@@ -7,3 +7,8 @@ interface Task {
 interface TasksState {
     items: Task[];
 }
+
+interface TaskCheckboxProps {
+    completed: boolean;
+    onToggle: () => void;
+}

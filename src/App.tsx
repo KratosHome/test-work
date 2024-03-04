@@ -4,9 +4,10 @@ import {AppDispatch, RootState} from "./store/store";
 import {addTask, toggleTask} from "./store/tasksSlice";
 import {MyInput} from "./component/ui/MyInput";
 import {MyBtn} from "./component/ui/MyBtn";
-import {CheckboxContainer, HiddenCheckbox, StyledCheckbox} from "./component/ui/MyCheckbox";
+import {CheckboxContainer, HiddenCheckbox, StyledCheckbox} from "./component/Checkbox/MyCheckbox";
 import {AppStyle} from "./app-style";
 import {FilterSelect} from "./component/ui/FilterSelect";
+import Checkbox from "./component/Checkbox/Checkbox";
 
 function App() {
     const dispatch = useDispatch<AppDispatch>();
@@ -60,10 +61,7 @@ function App() {
             <div>
                 {filteredTasks.map((item) => (
                     <div key={item.id} className="item-task">
-                        <CheckboxContainer onClick={() => handleToggleTask(item.id)}>
-                            <HiddenCheckbox checked={item.completed}/>
-                            <StyledCheckbox checked={item.completed}/>
-                        </CheckboxContainer>
+                        <Checkbox completed={item.completed} onToggle={() => handleToggleTask(item.id)}/>
                         <span> {item.name}</span>
                     </div>
                 ))}
