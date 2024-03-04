@@ -3,6 +3,6 @@
     "@wemake-services/javascript"
   ],
   "rules": {
-    "some-rule-about-filename": "off"
+    "unicorn/filename-case": "off"
   }
 }
