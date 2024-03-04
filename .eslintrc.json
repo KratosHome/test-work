@@ -1,5 +1,7 @@
 {
   "extends": [
-    "@wemake-services/typescript/recommended"
+    "@wemake-services/typescript/recommended",
+    "@wemake-services/javascript",
+    "plugin:@typescript-eslint/recommended"
   ]
 }

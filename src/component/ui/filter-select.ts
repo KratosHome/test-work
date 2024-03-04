@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const FilterSelect = styled.select`
     padding: 10px;
@@ -13,6 +13,6 @@ export const FilterSelect = styled.select`
     &:hover {
         background-color: #007bff;
         color: #fff;
-        border-color: #0056b3;
+        border-color: #0056b3; 
     }
 `

@@ -1,12 +1,16 @@
-import React from 'react'
-import {CheckboxContainer, HiddenCheckbox, StyledCheckbox} from './my-checkbox'
+import { FC } from 'react'
+import {
+  CheckboxContainer,
+  HiddenCheckbox,
+  StyledCheckbox,
+} from './my-style-checkbox'
 
 interface TaskCheckboxProps {
   completed: boolean
   onToggle: () => void
 }
 
-const MyCheckbox: React.FC<TaskCheckboxProps> = ({completed, onToggle}) => {
+const MyCheckbox: FC<TaskCheckboxProps> = ({ completed, onToggle }) => {
   return (
     <CheckboxContainer onClick={onToggle}>
       <HiddenCheckbox checked={completed} readOnly/>
@@ -14,5 +18,5 @@ const MyCheckbox: React.FC<TaskCheckboxProps> = ({completed, onToggle}) => {
     </CheckboxContainer>
   )
 }
- 
+
 export default MyCheckbox

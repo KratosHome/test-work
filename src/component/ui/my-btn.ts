@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const MyBtn = styled.button`
     padding: 10px;
@@ -9,8 +9,8 @@ export const MyBtn = styled.button`
     background-color: #f0f0f0; /* Сірий колір фону */
     color: #333; /* Темно-сірий колір тексту */
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-
-
+ 
+ 
     &:hover {
         background-color: #007bff;
         color: #fff;
