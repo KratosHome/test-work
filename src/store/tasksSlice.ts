@@ -1,15 +1,7 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit'
 import {RootState} from './store'
 
-interface Task {
-  id: string
-  name: string
-  completed: boolean
-}
 
-interface TasksState {
-  items: Task[]
-}
 
 const initialState: TasksState = {
   items: [],
