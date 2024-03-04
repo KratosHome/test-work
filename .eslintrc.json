@@ -1,8 +1,5 @@
 {
   "extends": [
-    "@wemake-services/javascript"
-  ],
-  "rules": {
-    "unicorn/filename-case": "off"
-  }
+    "@wemake-services/typescript/recommended"
+  ]
 }

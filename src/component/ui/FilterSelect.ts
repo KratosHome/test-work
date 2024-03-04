@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const FilterSelect = styled.select`
     padding: 10px;
@@ -15,4 +15,4 @@ export const FilterSelect = styled.select`
         color: #fff;
         border-color: #0056b3;
     }
-`;
+`

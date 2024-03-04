@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const MyBtn = styled.button`
     padding: 10px;
@@ -16,4 +16,4 @@ export const MyBtn = styled.button`
         color: #fff;
         border-color: #0056b3;
     }
-`;
+`

@@ -1,14 +1,14 @@
 interface Task {
-    id: string;
-    name: string;
-    completed: boolean;
+  id: string
+  name: string
+  completed: boolean
 }
 
 interface TasksState {
-    items: Task[];
+  items: Task[]
 }
-
+ 
 interface TaskCheckboxProps {
-    completed: boolean;
-    onToggle: () => void;
+  completed: boolean
+  onToggle: () => void
 }
